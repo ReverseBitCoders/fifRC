@@ -2,7 +2,7 @@
 My first attempt at learning Ruby/Rails.
 
 This script when run, parses the RSS feed from railscast.com
-and starts Downloading the videos in 'webm' in the directory where
+and starts Downloading the videos in 'mp4' in the directory where
 the script has been called. 
 
 Duplication of videos has been avoided by passing the '-c' parameter
@@ -18,7 +18,6 @@ $ruby fifRC.rb
 
 voila!!!
 
-## Are there any dependancies? ##
-yes!
-*ruby
-*wget
+## Are there any dependancies? Yes! ##
+* ruby
+* wget
