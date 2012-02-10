@@ -21,7 +21,7 @@ final_url = rss.items.collect do |item|
   "#{ base_url }#{ item.title.sub("#","").gsub(" ","-").downcase }.webm"
 end
 
-p final_url.inspect
+#p final_url.inspect #=> printing this is only for debugging purpose
 
 final_url.each do |url|
   `wget -c #{url.downcase}`
