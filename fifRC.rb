@@ -13,12 +13,9 @@ end
 
 rss = RSS::Parser.parse(content, false)
 
-base_url = "http://media.railscasts.com/assets/episodes/videos/"
-
-#SAMPLE_URL => http://media.railscasts.com/assets/episodes/videos/316-private-pub.webm
-
+#=> Fetching the URL of the media
 final_url = rss.items.collect do |item|
-  "#{ base_url }#{ item.title.sub("#","").gsub(" ","-").downcase }.webm"
+  "#{item.enclosure.url}"
 end
 
 #p final_url.inspect #=> printing this is only for debugging purpose
