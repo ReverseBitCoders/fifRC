@@ -14,7 +14,9 @@ end
 rss = RSS::Parser.parse(content, false)
 
 #=> Fetching the URL of the media
+
 final_url = rss.items.collect do |item|
+  item.enclosure.url['mp4']= 'webm'
   "#{item.enclosure.url}"
 end
 
