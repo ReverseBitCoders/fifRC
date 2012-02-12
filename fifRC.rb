@@ -24,4 +24,7 @@ end
 
 final_url.each do |url|
   `wget -c #{url.downcase}`
+   url['webm'] = 'zip'
+   url['videos'] = 'sources'
+   `wget -c #{url.downcase}`
 end
