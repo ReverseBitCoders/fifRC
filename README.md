@@ -2,8 +2,10 @@
 My first attempt at learning Ruby/Rails.
 
 This script when run, parses the RSS feed from railscast.com
-and starts Downloading the videos in 'webm' in the directory where
-the script has been called. 
+and starts Downloading 
+1 the videos in 'webm' format and
+2 the Exercise files
+in the directory where the script has been called. 
 
 Duplication of videos has been avoided by passing the '-c' parameter
 to 'wget'.
@@ -18,6 +20,6 @@ $ruby fifRC.rb
 
 voila!!!
 
-## Are there any dependancies? Yes! ##
+## Are there any dependencies? Yes! ##
 * ruby
 * wget
