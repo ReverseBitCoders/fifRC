@@ -1,3 +1,6 @@
+##THIS PROJECT IS DISCONTINUED##
+It will be continued at git@github.com:ReverseBitCoders/CastGrabber.git
+
 ## About this code ##
 My first attempt at learning Ruby/Rails.
 
